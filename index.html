@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid_container">
+        <div class="left_box">
+          <div class="title">Deserts</div>
+          <div class="left_part_grid" id="food_container">
+            <!-- <div class="item_box">
+              <div class="relative_box">
+                <img
+                  src="/assets/images/image-baklava-desktop.jpg"
+                  alt=""
+                  width="100%"
+                  class="rounded_img"
+                  srcset=""
+                />
+                <div class="btn_box">
+                  <img
+                    src="/assets/images/icon-add-to-cart.svg"
+                    alt=""
+                    srcset=""
+                  />
+                  <button class="cart_btn">add to card</button>
+                </div>
+                <div class="btn_box_cart" style="display: none">
+                  <img
+                    src="/assets/images/icon-decrement-quantity.svg"
+                    alt=""
+                    srcset=""
+                  />
+                  <button class="cart_btn_num">1</button>
+                  <img
+                    src="/assets/images/icon-increment-quantity.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div class="company_name">name</div>
+              <div class="title_food">liter</div>
+              <div class="price">$7.00</div>
+            </div> -->
+          </div>
+        </div>
+        <div>
+          <div class="cart_box">
+            <div class="cart_text" id="cart_item_list">
+              You have emplty cart
+            </div>
+            <div class="full_cart" id="full_cart"></div>
+            <div class="empty_cart" id="empty_cart">
+              <img
+                src="/assets/images/illustration-empty-cart.svg"
+                alt=""
+                class="empty_cart"
+              />
+              <div class="text">you have emplty cart</div>
+            </div>
+
+            <div class="total_price" id="total_price" style="display: none">
+              <span class="total_price_text">Total Price :</span>
+              <span class="price_num" id="price_num">45</span>
+            </div>
+
+            <div class="order_confrim" id="order_confrim" style="display: none">
+              <img src="/assets/images/icon-order-confirmed.svg" alt="" />
+              <div class="order_title">Order Confrimed</div>
+              <div class="order-sub_title">Lorem ipsum dolor sit.</div>
+
+              <div class="order_cart" id="order_cart"></div>
+              <div class="total_price" id="total_price">
+                <span class="total_price_text">Total Price :</span>
+                <span class="price_num" id="price_num_order">45</span>
+              </div>
+              <button class="confrim_order" id="new_order">
+                create new item
+              </button>
+            </div>
+            <button
+              class="confrim_order"
+              id="confrim_order"
+              style="display: none"
+            >
+              Confrim Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

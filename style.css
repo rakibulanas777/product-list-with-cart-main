@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Red Hat Text", sans-serif;
+  box-sizing: border-box;
+  background-color: hsl(13, 31%, 94%);
+}
+
+/* .container {
+  max-width: 1400px;
+} */
+.grid_container {
+  display: grid;
+  padding: 16px;
+  gap: 25px;
+  grid-template-columns: 3fr 1fr;
+}
+
+.left_box,
+.title {
+  font-size: 4vh;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.left_part_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+
+.item_box {
+  display: flex;
+  flex-direction: column;
+}
+.relative_box {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.rounded_img {
+  border-radius: 8px;
+}
+.btn_box {
+  border-radius: 25px;
+  padding: 6px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  width: 8rem;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-bottom: 1px solid salmon;
+}
+.btn_box_cart {
+  border-radius: 25px;
+  padding: 6px 18px;
+  display: flex;
+  width: 8rem;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: hwb(0 28% 0%);
+  color: white !important;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-bottom: 1px solid salmon;
+}
+
+.cart_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 3px;
+  color: hsl(12, 20%, 50%);
+  font-weight: 600;
+}
+.cart_btn_num {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 3px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.company_name {
+  font-size: 12px;
+  color: hsl(14, 25%, 72%);
+}
+.title_food {
+  font-size: 4.4vh;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 3.4vh;
+  font-weight: 600;
+  color: hsl(1, 93%, 66%);
+}
+
+.cart_box {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 18px;
+  text-align: center;
+}
+
+.cart_text {
+  font-size: 3.3vh;
+  font-weight: 600;
+  text-align: left;
+  color: hsl(1, 93%, 66%);
+  padding-bottom: 14px;
+}
+
+.empty_cart {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  font-weight: 400;
+  color: hsl(14, 25%, 72%);
+}
+
+.single_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0px;
+  border-bottom: 2px solid rgba(250, 128, 114, 0.064);
+}
+
+.cart_item_title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.flex_price {
+  display: flex;
+  gap: 12px;
+  font-weight: 600;
+  color: hsl(1, 93%, 66%);
+}
+
+.remove_btn {
+  cursor: pointer;
+}
+.total_price {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total_price_text {
+  font-weight: 600;
+}
+
+.price_num {
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.confrim_order {
+  border-radius: 25px;
+  padding: 15px 18px;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(12, 20%, 44%);
+  box-shadow: none;
+  color: white;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.order_confrim {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.order_title {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.order_cart {
+  padding: 18px;
+  margin-top: 12px;
+  background-color: hsl(13, 31%, 94%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.order_cart_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order_cart_flex {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+  .left_part_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .left_part_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .order_confrim {
+    position: fixed;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .order_confrim {
+    width: 80%;
+  }
+  .order_title {
+    font-size: 5vw;
+  }
+}
